@@ -1,0 +1,1 @@
+export default { VISIT: 'DragDropVisit' };

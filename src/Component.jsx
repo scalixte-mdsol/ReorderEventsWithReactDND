@@ -1,17 +1,12 @@
 import React from 'react';
+import DragDropTable from './DragDropTable';
 
-var Component = React.createClass({
-  render: function () {
-    if (this.props.onRender) {
-      this.props.onRender();
-    }
+export default class Component extends React.Component {
+  render() {
     return (
-      <p>Hello world</p>
+      <div>
+        <DragDropTable rows={5} cols={4} />
+      </div>
     );
-  },
-  propTypes: {
-    onRender: React.PropTypes.func
   }
-});
-
-export default Component;
+}
