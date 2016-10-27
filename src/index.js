@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Component from './Component';
+import Grid from './Grid';
 
-ReactDOM.render(<Component />, document.getElementById('visit'));
+ReactDOM.render(<Grid rows={10} cols={5}/>, document.getElementById('grid'));
